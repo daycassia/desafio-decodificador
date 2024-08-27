@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dfe4f2;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100vh;
+  margin: 40px;
+  gap: 80px;
+}
+
+.esquerda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 128px;
+  width: 668px;
+  padding-bottom: 72px;
+}
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 30%;
+  height: 90%;
+  border-radius: 32px;
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  overflow-wrap: break-word;
+  padding-inline: 32px;
+  background-color: #ffffff;
+  resize: none;
+}
+
+.direita__content {
+  max-width: 336px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.content {
+  font-size: 16px;
+}
+
+textarea.texto-entrada {
+  width: 70%;
+  height: 70%;
+  top: 168px;
+  left: 240px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  border: none;
+  background-color: #dfe4f2;
+  color: #0a3871;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #0a3871;
+}
+
+.logo {
+  width: 120px;
+  height: 48px;
+  object-fit: contain;
+  padding-right: 144px;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.botao__criptografar {
+  border-radius: 24px;
+  border-color: transparent;
+  width: 328px;
+  height: 67px;
+  background-color: #0a3871;
+  color: white;
+}
+
+.botao__criptografar:active {
+    background-color: black;
+}
+
+.botao__descriptografar {
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  background-color: #d8dfe8;
+
+  color: #0a3871;
+}
+
+.botao__copiar {
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  background-color: #d8dfe8;
+
+  color: #0a3871;
+}
+
+#texto-saida {
+  background-color: white;
+  margin: 30px 20px 10px 20px;
+  border: none;
+  width: 80%;
+  height: 50%;
+  color: #0a3871;
+  font-size: 20px;
+  text-align: left;
+  text-transform: lowercase;
+  resize: none;
+}
+
+#texto-saida::placeholder {
+  color: #0a3871;
+  font-size: 16px;
+  text-align: center;
+  color: #495057;
+}
+
+
+.alerta {
+  display: flex;
+  align-items: center;
+  gap:8px;
+  font-size: 12px;
+  color: #343A40;
+}
+
+.alertaIMG {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (max-width: 770px) {
+  .body {
+    width: 100vw;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 770px;
+    gap: 0;
+    margin: 0;
+  }
+  .botoes {
+    flex-direction: column;
+  }
+
+  .esquerda {
+    align-items: center;
+  }
+
+  .texto-entrada {
+    font-size: 5px;
+  }
+
+  .direita {
+    height: fit-content;
+  }
+
+  .icone {
+    display: none;
+  }
+  
+  .botao__copiar {
+    width: 100%;
+  }
+  .logo {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Codificador</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <img
+          id="logoImage"
+          class="logo"
+          loading="lazy"
+          src="img/logo.png"
+          alt="Letra A de Alura"
+        />
+        <div class="esquerda">
+          <textarea
+            name=""
+            id="texto-entrada"
+            class="texto-entrada"
+            cols="10"
+            placeholder="Digite seu texto..."
+          ></textarea>
+          <div class="under-content">
+            <div class="alerta">
+
+              <img
+                class="alertaIMG"
+                src="img/alerta.png"
+                loading="lazy"
+                alt="Alerta de Apenas letras minúsculas e sem acento"
+              />
+              <p>Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="botoes">
+              <button class="botao__criptografar">Criptografar</button>
+              <button class="botao__descriptografar">Descriptografar</button>
+            </div>
+          </div>
+        </div>
+        <div class="direita">
+          <div class="direita__content">
+            <img
+              id="icone"
+              class="icone"
+              src="img/garoto.png"
+              alt="Garoto de joelhos, de cabelo azul e roupa azul, segurando uma lupa e olhando um diamante"
+            />
+            <h3 class="title" id="nada">Nenhuma mensagem encontrada</h3>
+          </div>
+          
+          <textarea
+            cols="10"
+            readonly
+            name=""
+            id="texto-saida"
+            placeholder=""
+            class="hidden"
+          ></textarea>
+
+          <h3 id="mensagem"></h3>
+          <button class="botao__copiar">Copiar</button>
+        </div>
+    </div>
+  </body>
+</html>
