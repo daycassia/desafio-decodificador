@@ -4,7 +4,7 @@ Este projeto é uma aplicação web que permite aos usuários criptografar e des
 
  Funcionalidades
 
-- Criptografar Texto**: Converte um texto inserido em uma versão criptografada usando as seguintes regras:
+- Criptografar Texto: Converte um texto inserido em uma versão criptografada usando as seguintes regras:
   - `e` -> `enter`
   - `i` -> `imes`
   - `a` -> `ai`
@@ -13,7 +13,7 @@ Este projeto é uma aplicação web que permite aos usuários criptografar e des
 
 - Descriptografar Texto: Converte um texto criptografado de volta ao formato original usando as regras acima.
 
-- Copiar Texto: Permite que o usuário copie o texto criptografado ou descriptografado para a área de transferência com um clique.
+- Copiar Texto: Permite que o usuário copie o texto descriptografado para a área de transferência com um clique.
 
 Regras de Validação
 
